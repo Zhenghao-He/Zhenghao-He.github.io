@@ -2,18 +2,18 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Zhenghao He (何征昊)
     - name: Date of Birth
-      value: 14th March 1879
+      value: 31th October 2001
     - name: Languages
-      value: English, German
+      value: English, Chinese
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachlor of Science
+      institution: Tongji University, Shanghai, China
+      year: 2020 - 2024(expected)
       description:
         - Description 1.
         - Description 2.
