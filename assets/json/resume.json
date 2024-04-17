@@ -73,25 +73,32 @@
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "A Music Labeling Model Based on Traditional Chinese Music Characteristics for Emotional Regulation",
+      "publisher": "Association for Computing Machinery",
+      "releaseDate": "2023-02-23",
+      "url": "https://doi.org/10.1145/3587828.3587837",
+      "summary": "This paper aims to use feature engineering to find effective music features which are effective for classifying different types of music and thus to try to provide an automatic recognition framework for building music libraries that can be used for mood regulation and music therapy. "
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Alzheimer's Disease Early Diagnosis Based on Resting-State Dynamic Functional Connectivity",
+      "publisher": "Association for Computing Machinery",
+      "releaseDate": "2023-02-23",
+      "url": "https://doi.org/10.1145/3587828.3587881",
+      "summary": "Functional magnetic resonance imaging (fMRI) technology has been widely used in the diagnosis of Alzheimer's disease, but there are some problems such as high data dimension and unclear characteristics. The nonlinear complex network of different brain regions based on the Lyapunov exponents and approximate entropy are extracted in this work."
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Conditional Domain Adaptation Based on Initial Distribution Discrepancy for EEG Emotion Recognition",
+      "publisher": "Springer Nature Switzerland",
+      "releaseDate": "2023-01-10",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-23179-7_8",
+      "summary": "How to integrate data in different feature spaces and distributions is a research hotspot in EEG-based emotion recognition. A novel source-domain adaptation strategy based on initial distribution differences for EEG emotion recognition is proposed, which selects several source domains that are most similar to the target domain for domain adaptation."
+    },
+    {
+      "name": "Comparison Of Different Machine Learning Methods Applied To Obesity Classification",
+      "publisher": "IEEE",
+      "releaseDate": "2022-08-05",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9943193",
+      "summary": "The article tries to find a model that can predict obesity and provides people with the information of how to avoid overweight. To be more specific, this article applied dimension reduction to the data set to simplify the data and tried to Figure out a most decisive feature of obesity through Principal Component Analysis (PCA) based on the data set."
     }
   ],
 
