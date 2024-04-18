@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - Zhenghao-He
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - Zhenghao-He/BrainBeats
+  - Zhenghao-He/Gobang-AI
+  - Zhenghao-He/MutiCycle-CPU
+
