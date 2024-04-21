@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: BrainBeats
+description: Design and implement a portable single-channel EEG fatigue detection device.
 img: assets/img/brainbeats/logo.png 
 importance: 1
 category: work
