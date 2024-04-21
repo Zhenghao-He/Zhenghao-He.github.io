@@ -6,7 +6,7 @@ img: assets/img/3.jpg
 importance: 2
 category: work
 giscus_comments: true
---- -->
+--- 
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
@@ -79,3 +79,4 @@ Here's the code for the last row of images above:
 ```
 
 {% endraw %}
+-->
