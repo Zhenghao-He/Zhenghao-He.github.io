@@ -24,13 +24,24 @@
   },
   "education": [
     {
+      "institution": "University of Virginia, Charlottesville, VA",
+      "location": "Charlottesville, VA",
+      "url": "https://www.virginia.edu/",
+      "area": "Computer Science",
+      "studyType": "Ph.D. in Computer Science",
+      "startDate": "2024-08-27",
+      "endDate": "present",
+      "score": "",
+      "courses": ["Machine Learning", "Deep Learning", "Natural Language Processing"]
+    },
+    {
       "institution": "Tongji University, Shanghai, China",
       "location": "Shanghai, China",
       "url": "https://en.tongji.edu.cn/p/#/",
       "area": "Compter Science and Technology",
       "studyType": "Bachlor of Science",
       "startDate": "2020-09-01",
-      "endDate": "present",
+      "endDate": "2024-07-01",
       "score": "",
       "courses": ["Computer Architecture", "Data Structures", "Computer Networks"]
     }
@@ -41,7 +52,7 @@
       "position": "AI Model Optimization Intern",
       "url": "https://www.alibabacloud.com/",
       "startDate": "2024-03-05",
-      "endDate": "present",
+      "endDate": "2024-07-27",
       "summary": "Responsible for GPU fault prediction, AI Agents research, and other related tasks.",
       "highlights": ["AI Agents", "GPU fault prediction"]
     },
