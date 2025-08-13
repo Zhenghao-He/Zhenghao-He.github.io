@@ -5,95 +5,17 @@
 
 
 
-@INPROCEEDINGS{9943193,
-  author={He, Zhenghao},
-  booktitle={2022 International Conference on Machine Learning and Intelligent Systems Engineering (MLISE)}, 
-  title={Comparison Of Different Machine Learning Methods Applied To Obesity Classification}, 
-  abstract={Estimation for obesity levels is always an important topic in medical field since it can provide useful guidance for people that would like to lose weight or keep fit. The article tries to find a model that can predict obesity and provides people with the information of how to avoid overweight. To be more specific, this article applied dimension reduction to the data set to simplify the data and tried to Figure out a most decisive feature of obesity through Principal Component Analysis (PCA) based on the data set. The article also used some machine learning methods like Support Vector Machine (SVM), Decision Tree to do prediction of obesity and wanted to find the major reason of obesity. In addition, the article uses Artificial Neural Network (ANN) to do prediction which has more powerful feature extraction ability to do this. Finally, the article found that family history of obesity is the most decisive feature, and it may because of obesity may be greatly affected by genes or the family eating diet may have great influence. And both ANN and Decision tree’s accuracy of prediction is higher than 90%.},
-  year={2022},
-  volume={},
-  number={},
-  pages={467-472},
-  keywords={Support vector machines;Dimensionality reduction;Obesity;Machine learning algorithms;Artificial neural networks;Prediction algorithms;Classification algorithms;component;Machine learning;Obesity levels estimation;Dimension reduction},
-  doi={10.1109/MLISE57402.2022.00099},
-  html={https://ieeexplore.ieee.org/abstract/document/9943193},
-  pdf={Comparison of Different Machine Learning Methods Applied to Obesity Classification.pdf},
-  dimensions={true},
-  google_scholar_id={u5HHmVD_uO8C},
-  preview="obesity_pca.png"
-}
 
-@inproceedings{10.1145/3587828.3587837,
-  author = {He, Zhenghao and Chen, Ruifan and Hou, Yayue and Xie, Fei and Gong, Xiaoliang and Cohn, Anthony G.},
-  title = {A Music Labeling Model Based on Traditional Chinese Music Characteristics for Emotional Regulation},
-  year = {2023},
-  isbn = {9781450398589},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3587828.3587837},
-  doi = {10.1145/3587828.3587837},
-  abstract = {The effectiveness of emotion regulation based on traditional Chinese music has been verified in clinical trials over thousands of years, but the reasons are unclear. This paper aims to use feature engineering to find effective music features which are effective for classifying different types of music and thus to try to provide an automatic recognition framework for building music libraries that can be used for mood regulation and music therapy. In this work, five modes (equivalent to the scales of Western music) of traditional Chinese music repertoire which can be used to regulate loneliness, anxiety, anger, joy, and fear are used. Features including Chroma, Mel-spectrogram, Tonnetz, and full feature vector features, are extracted for different length fragments of a piece of music which are then used to build a classification model for the five modes using a convolutional neural network (CNN). The results show that the highest 5-classes classification accuracy, 71.09\%, is achieved from a Mel map of 5s music clips. A music mode labeling model is then constructed using a weighted combination of the different individual feature models. This model was then qualitatively evaluated on 13 pieces of music in different musical styles, and the results were reasonable from a music theory perspective. In future work, this music labeling model will be tested on more types of tracks to better assess its reliability.},
-  booktitle = {Proceedings of the 2023 12th International Conference on Software and Computer Applications},
-  pages = {53-58},
-  numpages = {6},
-  location = {<conf-loc>, <city>Kuantan</city>, <country>Malaysia</country>, </conf-loc>},
-  series = {ICSCA '23},
+
+@inproceedings{he2025gcav,
+  author = {He, Zhenghao and Sanchit Sinha and Guangzhi Xiong and Aidong Zhang},
+  title = {GCAV: A Global Concept Activation Vector Framework for Cross-Layer Consistency in Interpretability},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year = {2025},
+  note = {To appear},
+  abstract = {Concept Activation Vectors (CAVs) provide a powerful approach for interpreting deep neural networks by quantifying their sensitivity to human-defined concepts. However, when computed independently at different layers, CAVs often exhibit inconsistencies, making cross-layer comparisons unreliable. To address this issue, we propose the Global Concept Activation Vector (GCAV), a novel framework that unifies CAVs into a single, semantically consistent representation. Our method leverages contrastive learning to align concept representations across layers and employs an attention-based fusion mechanism to construct a globally integrated CAV. By doing so, our method significantly reduces the variance in TCAV scores while preserving concept relevance, ensuring more stable and reliable concept attributions. To evaluate the effectiveness of GCAV, we introduce Testing with Global Concept Activation Vectors (TGCAV) as a method to apply TCAV to GCAV-based representations. We conduct extensive experiments on multiple deep neural networks, demonstrating that our method effectively mitigates concept inconsistency across layers, enhances concept localization, and improves robustness against adversarial perturbations. By integrating cross-layer information into a coherent framework, our method offers a more comprehensive and interpretable understanding of how deep learning models encode human-defined concepts.},
   dimensions={true},
-  html={https://dl.acm.org/doi/abs/10.1145/3587828.3587837},
-  pdf={A Music Labeling Model Based on Traditional Chinese Music Characteristics for Emotional Regulation.pdf},
-  google_scholar_id={u-x6o8ySG0sC},
-  preview="music.png",
+  pdf={ICCV2025.pdf},
+  preview="ICCV2025.png",
   selected={true}
-}
-
-@inproceedings{10.1145/3587828.3587881,
-  author = {Xie, Fei and Gong, Xiaoliang and He, Zhenghao and Wu, Tongqi and Lu, Yan and Zhao, Mohan},
-  title = {Alzheimer's Disease Early Diagnosis Based on Resting-State Dynamic Functional Connectivity},
-  year = {2023},
-  isbn = {9781450398589},
-  publisher = {Association for Computing Machinery},
-  address = {New York, NY, USA},
-  url = {https://doi.org/10.1145/3587828.3587881},
-  doi = {10.1145/3587828.3587881},
-  abstract = {Functional magnetic resonance imaging (fMRI) technology has been widely used in the diagnosis of Alzheimer's disease, but there are some problems such as high data dimension and unclear characteristics. The nonlinear complex network of different brain regions based on the Lyapunov exponents and approximate entropy are extracted in this work. The open data set ADNI (Alzheimer's disease neuroimaging initiative) are used to test. The results show that in the other three different groups and patients with Alzheimer's disease, the accuracy of the classification results using SVM (support vector machine) classifier at the whole brain voxel level can reach more than 99\%, which is better than the classification results using the correlation of the original time series. Our findings provide new insights into the complexity of brain structural networks in the process of Alzheimer's disease and other mental diseases.},
-  booktitle = {Proceedings of the 2023 12th International Conference on Software and Computer Applications},
-  pages = {356-361},
-  numpages = {6},
-  location = {<conf-loc>, <city>Kuantan</city>, <country>Malaysia</country>, </conf-loc>},
-  series = {ICSCA '23},
-  dimensions={true},
-  html={https://dl.acm.org/doi/abs/10.1145/3587828.3587881},
-  pdf={Alzheimer’s Disease Early Diagnosis Based On Resting-state Dynamic Functional Connectivity.pdf},
-  google_scholar_id={d1gkVwhDpl0C},
-  preview="xf_cormatrics.png"
-}
-
-@InProceedings{10.1007/978-3-031-23179-7_8,
-  author="Zhao, Mohan
-  and Pang, Lu
-  and Lu, Yan
-  and Xie, Fei
-  and He, Zhenghao
-  and Gong, Xiaoliang
-  and Cohn, Anthony George",
-  editor="Chen, Yufei
-  and Linguraru, Marius George
-  and Shekhar, Raj
-  and Wesarg, Stefan
-  and Erdt, Marius
-  and Drechsler, Klaus
-  and Oyarzun Laura, Cristina",
-  title="Conditional Domain Adaptation Based on Initial Distribution Discrepancy for EEG Emotion Recognition",
-  booktitle="Clinical Image-Based Procedures",
-  year="2023",
-  publisher="Springer Nature Switzerland",
-  address="Cham",
-  pages="72--81",
-  abstract="How to integrate data in different feature spaces and distributions is a research hotspot in EEG-based emotion recognition. A novel source-domain adaptation strategy based on initial distribution differences for EEG emotion recognition is proposed, which selects several source domains that are most similar to the target domain for domain adaptation. Compared to the `source-target pair' domain adaptation method using all source domains, this method improves accuracy by up to 10{\$}{\$}{\backslash}{\%}{\$}{\$}and reduces computation time by up to 43{\$}{\$}{\backslash}{\%}{\$}{\$}, based on the SEED-III and SEED-IV datasets.",
-  isbn="978-3-031-23179-7",
-  dimensions={true},
-  html={https://link.springer.com/chapter/10.1007/978-3-031-23179-7_8},
-  pdf={Conditional Domain Adaption Based on Initial Distribution Discrepancy for EEG Emotion Recognition.pdf},
-  google_scholar_id={9yKSN-GCB0IC},
-  preview="domian_adaption.png"
 }

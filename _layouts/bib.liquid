@@ -1,23 +1,33 @@
 ---
 ---
-<div class="row">
+<div class="row" style="{% if site.enable_publication_thumbnails %}display: flex; align-items: flex-start;{% endif %}">
   {% if site.enable_publication_thumbnails %}
-    <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
+    <div class="col-sm-4 {% if entry.preview %}preview{% else %}abbr{% endif %}" style="padding-right: 15px;">
       {% if entry.preview %}
-        {% if entry.preview contains '://' %}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
-        {% else %}
-          {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
-          {%
-            include figure.liquid
-            loading="eager"
-            path=entry_path
-            sizes = "200px"
-            class="preview z-depth-1 rounded"
-            zoomable=false
-            alt=entry.preview
-          %}
-        {% endif %}
+        <div style="position: relative; width: 100%; padding-bottom: 66.67%; overflow: hidden; border-radius: 8px; background-color: #f8f9fa;" class="z-depth-1">
+          {% if entry.preview contains '://' %}
+            <img class="preview" src="{{ entry.preview }}" style="position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; object-fit: cover !important; border-radius: 8px;">
+          {% else %}
+            {% assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' %}
+            <img class="preview" src="{{ entry_path | relative_url }}" style="position: absolute !important; top: 0 !important; left: 0 !important; width: 100% !important; height: 100% !important; object-fit: cover !important; border-radius: 8px;" alt="{{ entry.preview }}">
+          {% endif %}
+          <!-- Conference/Journal badge -->
+          {% if entry.booktitle %}
+            {% assign venue_name = entry.booktitle | split: ' ' | first %}
+            {% if venue_name contains 'IEEE' or venue_name contains 'Conference' or venue_name contains 'Proceedings' %}
+              {% assign venue_name = entry.booktitle | split: '(' | last | split: ')' | first %}
+            {% endif %}
+          {% elsif entry.journal %}
+            {% assign venue_name = entry.journal %}
+          {% elsif entry.series %}
+            {% assign venue_name = entry.series %}
+          {% else %}
+            {% assign venue_name = "Publication" %}
+          {% endif %}
+          <div style="position: absolute; top: 8px; left: 8px; background-color: #007bff; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">
+            {{ venue_name }}
+          </div>
+        </div>
       {% elsif entry.abbr %}
         {% if site.data.venues[entry.abbr] %}
           {% assign venue_style = null %}
@@ -40,6 +50,7 @@
 
   <!-- Entry bib key -->
   <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+    <div>
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
@@ -152,6 +163,7 @@
     </div>
     <div class="periodical">
       {{ entry.note | strip }}
+    </div>
     </div>
 
     <!-- Links/Buttons -->
