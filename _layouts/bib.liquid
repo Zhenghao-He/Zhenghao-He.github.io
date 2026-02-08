@@ -13,19 +13,25 @@
           {% endif %}
           <!-- Conference/Journal badge -->
           {% if entry.booktitle %}
-            {% assign venue_name = entry.booktitle | split: ' ' | first %}
-            {% if venue_name contains 'IEEE' or venue_name contains 'Conference' or venue_name contains 'Proceedings' %}
-              {% assign venue_name = entry.booktitle | split: '(' | last | split: ')' | first %}
+            {% if entry.booktitle contains '(' and entry.booktitle contains ')' %}
+              {% assign venue_name = entry.booktitle | split: '(' | last | split: ')' | first | strip %}
+              {% if venue_name == '' %}
+                {% assign venue_name = 'arXiv' %}
+              {% endif %}
+            {% else %}
+              {% assign venue_name = 'arXiv' %}
             {% endif %}
           {% elsif entry.journal %}
             {% assign venue_name = entry.journal %}
           {% elsif entry.series %}
             {% assign venue_name = entry.series %}
+          {% elsif entry.arxiv %}
+            {% assign venue_name = 'arXiv' %}
           {% else %}
-            {% assign venue_name = "Publication" %}
+            {% assign venue_name = "arXiv" %}
           {% endif %}
           <div style="position: absolute; top: 8px; left: 8px; background-color: #007bff; color: white; padding: 4px 8px; border-radius: 4px; font-size: 12px; font-weight: bold;">
-            {{ venue_name }}
+            {{ venue_name | raw }}
           </div>
         </div>
       {% elsif entry.abbr %}

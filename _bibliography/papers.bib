@@ -3,16 +3,69 @@
 
 @string{aps = {American Physical Society,}}
 
+@inproceedings{he2026cot,
+  author = {He, Zhenghao and Guangzhi Xiong and Bohan Liu and Sanchit Sinha and Aidong Zhang},
+  title = {Reasoning Beyond Chain-of-Thought: A Latent Computational Mode in Large Language Models},
+  booktitle = {arXiv preprint arXiv:2601.08058},
+  year = {2026},
+  arxiv = {2601.08058},
+  abstract = {Chain-of-Thought (CoT) prompting has improved the reasoning performance of large language models (LLMs), but it remains unclear why it works and whether it is the unique mechanism for triggering reasoning in large language models. In this work, we study this question by directly analyzing and intervening on the internal representations of LLMs with Sparse Autoencoders (SAEs), identifying a small set of latent features that are causally associated with LLM reasoning behavior. Across multiple model families and reasoning benchmarks, we find that steering a single reasoning-related latent feature can substantially improve accuracy without explicit CoT prompting. For large models, latent steering achieves performance comparable to standard CoT prompting while producing more efficient outputs. We further observe that this reasoning-oriented internal state is triggered early in generation and can override prompt-level instructions that discourage explicit reasoning. Overall, our results suggest that multi-step reasoning in LLMs is supported by latent internal activations that can be externally activated, while CoT prompting is one effective, but not unique, way of activating this mechanism rather than its necessary cause.}, 
+  dimensions={true},
+  pdf={beyond_cot.pdf},
+  preview="beyond_cot.png",
+  selected={true}
+}
 
 
 
+@inproceedings{he2026casl,
+  author = {He, Zhenghao and Guangzhi Xiong and Boyang Wang and Sanchit Sinha and Aidong Zhang},
+  title = {CASL: Concept-Aligned Sparse Latents for Interpreting Diffusion Models},
+  booktitle = {arXiv preprint arXiv:2601.15441},
+  year = {2026},
+  arxiv = {2601.15441},
+  abstract = {Internal activations of diffusion models encode rich semantic information, but interpreting such representations remains challenging. While Sparse Autoencoders (SAEs) have shown promise in disentangling latent representations, existing SAE-based methods for diffusion model understanding rely on unsupervised approaches that fail to align sparse features with human-understandable concepts. This limits their ability to provide reliable semantic control over generated images. We introduce CASL (Concept-Aligned Sparse Latents), a supervised framework that aligns sparse latent dimensions of diffusion models with semantic concepts. CASL first trains an SAE on frozen U-Net activations to obtain disentangled latent representations, and then learns a lightweight linear mapping that associates each concept with a small set of relevant latent dimensions. To validate the semantic meaning of these aligned directions, we propose CASL-Steer, a controlled latent intervention that shifts activations along the learned concept axis. Unlike editing methods, CASL-Steer is used solely as a causal probe to reveal how concept-aligned latents influence generated content. We further introduce the Editing Precision Ratio (EPR), a metric that jointly measures concept specificity and the preservation of unrelated attributes. Experiments show that our method achieves superior editing precision and interpretability compared to existing approaches. To the best of our knowledge, this is the first work to achieve supervised alignment between latent representations and semantic concepts in diffusion models.}, 
+  dimensions={true},
+  pdf={casl.pdf},
+  preview="casl.png",
+  selected={true}
+}
+
+
+@inproceedings{sinha2026concept,
+  author = {Sinha, Sanchit and Guangzhi Xiong and Zhenghao He and Aidong Zhang},
+  title = {Concept-RuleNet: Grounded Multi-Agent Neurosymbolic Reasoning in Vision Language Models},
+  booktitle = {Association for the Advancement of Artificial Intelligence (AAAI), <b>Oral Presentation</b>},
+  year = {2026},
+  note = {To appear},
+  arxiv = {2511.11751},
+  abstract = {Modern vision-language models (VLMs) deliver impressive predictive accuracy yet offer little insight into 'why' a decision is reached, frequently hallucinating facts, particularly when encountering out-of-distribution data. Neurosymbolic frameworks address this by pairing black-box perception with interpretable symbolic reasoning, but current methods extract their symbols solely from task labels, leaving them weakly grounded in the underlying visual data. In this paper, we introduce a multi-agent system - Concept-RuleNet that reinstates visual grounding while retaining transparent reasoning. Specifically, a multimodal concept generator first mines discriminative visual concepts directly from a representative subset of training images. Next, these visual concepts are utilized to condition symbol discovery, anchoring the generations in real image statistics and mitigating label bias. Subsequently, symbols are composed into executable first-order rules by a large language model reasoner agent - yielding interpretable neurosymbolic rules. Finally, during inference, a vision verifier agent quantifies the degree of presence of each symbol and triggers rule execution in tandem with outputs of black-box neural models, predictions with explicit reasoning pathways. Experiments on five benchmarks, including two challenging medical-imaging tasks and three underrepresented natural-image datasets, show that our system augments state-of-the-art neurosymbolic baselines by an average of 5% while also reducing the occurrence of hallucinated symbols in rules by up to 50%.},
+  dimensions={true},
+  pdf={aaai2026.pdf},
+  preview="aaai2026.png",
+  selected={true}
+}
+
+@inproceedings{xiong2026rag,
+  author = { Guangzhi Xiong and Zhenghao He and Bohan Liu and Sinha, Sanchit and Aidong Zhang},
+  title = {Toward Faithful Retrieval-Augmented Generation with Sparse Autoencoders},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year = {2026},
+  note = {To appear},
+  code = {https://github.com/Teddy-XiongGZ/RAGLens},
+  arxiv = {2512.08892},
+  abstract = {Retrieval-Augmented Generation (RAG) improves the factuality of large language models (LLMs) by grounding outputs in retrieved evidence, but faithfulness failures, where generations contradict or extend beyond the provided sources, remain a critical challenge. Existing hallucination detection methods for RAG often rely either on large-scale detector training, which requires substantial annotated data, or on querying external LLM judges, which leads to high inference costs. Although some approaches attempt to leverage internal representations of LLMs for hallucination detection, their accuracy remains limited. Motivated by recent advances in mechanistic interpretability, we employ sparse autoencoders (SAEs) to disentangle internal activations, successfully identifying features that are specifically triggered during RAG hallucinations. Building on a systematic pipeline of information-based feature selection and additive feature modeling, we introduce RAGLens, a lightweight hallucination detector that accurately flags unfaithful RAG outputs using LLM internal representations. RAGLens not only achieves superior detection performance compared to existing methods, but also provides interpretable rationales for its decisions, enabling effective post-hoc mitigation of unfaithful RAG. Finally, we justify our design choices and reveal new insights into the distribution of hallucination-related signals within LLMs. },
+  dimensions={true},
+  pdf={iclr2026.pdf},
+  preview="iclr2026.png",
+  selected={true}
+}
 
 @inproceedings{he2025gcav,
   author = {He, Zhenghao and Sanchit Sinha and Guangzhi Xiong and Aidong Zhang},
   title = {GCAV: A Global Concept Activation Vector Framework for Cross-Layer Consistency in Interpretability},
   booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
   year = {2025},
-  note = {To appear},
   code = {https://github.com/Zhenghao-He/GCAV},
   arxiv = {2508.21197},
   abstract = {Concept Activation Vectors (CAVs) provide a powerful approach for interpreting deep neural networks by quantifying their sensitivity to human-defined concepts. However, when computed independently at different layers, CAVs often exhibit inconsistencies, making cross-layer comparisons unreliable. To address this issue, we propose the Global Concept Activation Vector (GCAV), a novel framework that unifies CAVs into a single, semantically consistent representation. Our method leverages contrastive learning to align concept representations across layers and employs an attention-based fusion mechanism to construct a globally integrated CAV. By doing so, our method significantly reduces the variance in TCAV scores while preserving concept relevance, ensuring more stable and reliable concept attributions. To evaluate the effectiveness of GCAV, we introduce Testing with Global Concept Activation Vectors (TGCAV) as a method to apply TCAV to GCAV-based representations. We conduct extensive experiments on multiple deep neural networks, demonstrating that our method effectively mitigates concept inconsistency across layers, enhances concept localization, and improves robustness against adversarial perturbations. By integrating cross-layer information into a coherent framework, our method offers a more comprehensive and interpretable understanding of how deep learning models encode human-defined concepts.},
