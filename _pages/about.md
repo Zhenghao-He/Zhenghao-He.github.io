@@ -6,7 +6,7 @@ subtitle:  Ph.D. Student | The University of Virginia
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: sakura_1_1.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
     <p></p>
