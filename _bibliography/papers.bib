@@ -63,6 +63,21 @@
 }
 
 @inproceedings{xiong2026rag,
+  author = {Guangzhi Xiong, Sanchit Sinha, Zhenghao He, Aidong Zhang},
+  title = {Retrieving Counterfactuals Improves Visual In-Context Learning},
+  booktitle = {International Conference on Learning Representations (CVPR)},
+  year = {2026},
+  note = {To appear},
+  code = {https://github.com/gzxiong/CIRCLES},
+  arxiv = {2603.16737},
+  abstract = {Vision-language models (VLMs) have achieved impressive performance across a wide range of multimodal reasoning tasks, but they often struggle to disentangle fine-grained visual attributes and reason about underlying causal relationships. In-context learning (ICL) offers a promising avenue for VLMs to adapt to new tasks, but its effectiveness critically depends on the selection of demonstration examples. Existing retrieval-augmented approaches typically rely on passive similarity-based retrieval, which tends to select correlated but non-causal examples, amplifying spurious associations and limiting model robustness. We introduce CIRCLES (Composed Image Retrieval for Causal Learning Example Selection), a novel framework that actively constructs demonstration sets by retrieving counterfactual-style examples through targeted, attribute-guided composed image retrieval. By incorporating counterfactual-style examples, CIRCLES enables VLMs to implicitly reason about the causal relations between attributes and outcomes, moving beyond superficial correlations and fostering more robust and grounded reasoning. Comprehensive experiments on four diverse datasets demonstrate that CIRCLES consistently outperforms existing methods across multiple architectures, especially on small-scale models, with pronounced gains under information scarcity. Furthermore, CIRCLES retrieves more diverse and causally informative examples, providing qualitative insights into how models leverage in-context demonstrations for improved reasoning. },
+  dimensions={true},
+  pdf={cvpr2026.pdf},
+  preview="cvpr2026.png",
+  selected={false}
+}
+
+@inproceedings{xiong2026rag,
   author = { Guangzhi Xiong and Zhenghao He and Bohan Liu and Sinha, Sanchit and Aidong Zhang},
   title = {Toward Faithful Retrieval-Augmented Generation with Sparse Autoencoders},
   booktitle = {International Conference on Learning Representations (ICLR)},
