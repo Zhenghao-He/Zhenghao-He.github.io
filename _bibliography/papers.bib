@@ -3,15 +3,31 @@
 
 @string{aps = {American Physical Society,}}
 
+
+@inproceedings{he2026cot,
+  author = {Bohan Liu, Wenqian Ye, Guangzhi Xiong, Zhenghao He, Sanchit Sinha, Aidong Zhang},
+  title = {Towards Robustness against Typographic Attack with Training-free Concept Localization},
+  booktitle = {The 2026 Conference on Empirical Methods in Natural Language Processing (ECCV)},
+  year = {2026},
+  arxiv = {2607.02494},
+  code = {https://github.com/Liu-524/SamplingTAR},
+  abstract = {Models trained via Contrastive Language-Image Pretraining (CLIP) serve as the foundational vision encoders for most modern Large Vision Language Models (LVLMs). Despite their widespread adoption, CLIP models exhibit a critical yet underexplored failure mode: irrelevant text appearing within images confounds visual representations, biasing them toward lexical meaning rather than true visual semantics. This robustness issue, commonly described as a Typographic Attack (TA), exposes a vulnerability that poses a significant risk to safety-critical applications such as autonomous driving. To achieve interpretable and effective robustness against TA, we propose a novel, training-free mechanistic interpretability method. Our method provides sampling-based interpretations of hidden state representations and quantitatively attributes semantic versus lexical focus to individual attention heads. Through probabilistic analysis and circuit mining, we isolate specific Vision Transformer (ViT) components that disproportionately encode lexical information, thereby identifying the mechanistic source of TA. We further show that simple interventions applied directly to the identified circuits, without any additional training, can substantially improve robustness against Typographic Attacks in object classification. These interventions, such as selective adjustment of attention weights, also outperform both supervised and training-free defense methods. Our experiments demonstrate that applying the proposed intervention to the vision encoders of several state-of-the-art LVLMs yields substantial gains in Visual Question Answering accuracy under Typographic Attack interference on RIO-Bench. These results confirm both the efficacy and the generalizability of our mechanistic approach. },
+  dimensions={true},
+  pdf={ECCV2026_Typographic_Attack.pdf},
+  preview="ECCV2026_Typographic_Attack.png",
+  selected={false}
+}
+
 @inproceedings{he2026cot,
   author = {He, Zhenghao and Guangzhi Xiong and Bohan Liu and Sanchit Sinha and Aidong Zhang},
-  title = {Reasoning Beyond Chain-of-Thought: A Latent Computational Mode in Large Language Models},
-  booktitle = {arXiv preprint arXiv:2601.08058},
+  title = {Triggering Chain-of-Thought via Latent Feature Interventions in Large Language Models},
+  booktitle = {The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP Main)},
   year = {2026},
-  arxiv = {2601.08058},
-  abstract = {Chain-of-Thought (CoT) prompting has improved the reasoning performance of large language models (LLMs), but it remains unclear why it works and whether it is the unique mechanism for triggering reasoning in large language models. In this work, we study this question by directly analyzing and intervening on the internal representations of LLMs with Sparse Autoencoders (SAEs), identifying a small set of latent features that are causally associated with LLM reasoning behavior. Across multiple model families and reasoning benchmarks, we find that steering a single reasoning-related latent feature can substantially improve accuracy without explicit CoT prompting. For large models, latent steering achieves performance comparable to standard CoT prompting while producing more efficient outputs. We further observe that this reasoning-oriented internal state is triggered early in generation and can override prompt-level instructions that discourage explicit reasoning. Overall, our results suggest that multi-step reasoning in LLMs is supported by latent internal activations that can be externally activated, while CoT prompting is one effective, but not unique, way of activating this mechanism rather than its necessary cause.}, 
+  arxiv = {2601.08058v2},
+  code = {https://github.com/Zhenghao-He/LatentCoT},
+  abstract = {Chain-of-Thought (CoT) prompting often improves the reasoning performance of large language models (LLMs), but the internal signal that triggers this behavior remains poorly understood. Leveraging the sparse features captured by Sparse Autoencoders (SAEs), we propose a systematic framework to analyze and intervene on the internal representations of LLMs, identifying a small set of latent features that are linked to reasoning behavior and can be causally tested through targeted intervention. Across multiple model families and reasoning benchmarks, we show that steering one or a small number of reasoning-related latent features can substantially induce reasoning behavior without explicit CoT prompting, achieving accuracy comparable to CoT. We further show that the identified features are not tied to particular wording patterns or verbosity, and confirm their causal role in reasoning through suppression experiments that impair performance even under CoT prompting. These results suggest that CoT prompting activates specific latent features to trigger reasoning, and that targeted intervention on these features offers an alternative pathway to elicit efficient reasoning behavior without explicit CoT prompting. }, 
   dimensions={true},
-  pdf={beyond_cot.pdf},
+  pdf={EMNLP2026_SAE_CoT_CR.pdf},
   preview="beyond_cot.png",
   selected={true}
 }
@@ -43,7 +59,7 @@
   dimensions={true},
   pdf={aaai2026.pdf},
   preview="aaai2026.png",
-  selected={true}
+  selected={false}
 }
 
 @inproceedings{xiong2026rag,
@@ -58,7 +74,7 @@
   dimensions={true},
   pdf={iclr2026.pdf},
   preview="iclr2026.png",
-  selected={true}
+  selected={false}
 }
 
 @inproceedings{he2025gcav,
