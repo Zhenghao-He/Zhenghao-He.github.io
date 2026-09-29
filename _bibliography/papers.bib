@@ -4,19 +4,19 @@
 @string{aps = {American Physical Society,}}
 
 
-@inproceedings{he2026cot,
-  author = {Bohan Liu, Wenqian Ye, Guangzhi Xiong, Zhenghao He, Sanchit Sinha, Aidong Zhang},
-  title = {Towards Robustness against Typographic Attack with Training-free Concept Localization},
-  booktitle = {The 2026 Conference on Empirical Methods in Natural Language Processing (ECCV)},
+@inproceedings{he2026casl,
+  author = {He, Zhenghao and Guangzhi Xiong and Boyang Wang and Sanchit Sinha and Aidong Zhang},
+  title = {CASL: Concept-Aligned Sparse Latents for Interpreting Diffusion Models},
+  booktitle = {The Fortieth Annual Conference on Neural Information Processing Systems (NeurIPS)},
   year = {2026},
-  arxiv = {2607.02494},
-  code = {https://github.com/Liu-524/SamplingTAR},
-  abstract = {Models trained via Contrastive Language-Image Pretraining (CLIP) serve as the foundational vision encoders for most modern Large Vision Language Models (LVLMs). Despite their widespread adoption, CLIP models exhibit a critical yet underexplored failure mode: irrelevant text appearing within images confounds visual representations, biasing them toward lexical meaning rather than true visual semantics. This robustness issue, commonly described as a Typographic Attack (TA), exposes a vulnerability that poses a significant risk to safety-critical applications such as autonomous driving. To achieve interpretable and effective robustness against TA, we propose a novel, training-free mechanistic interpretability method. Our method provides sampling-based interpretations of hidden state representations and quantitatively attributes semantic versus lexical focus to individual attention heads. Through probabilistic analysis and circuit mining, we isolate specific Vision Transformer (ViT) components that disproportionately encode lexical information, thereby identifying the mechanistic source of TA. We further show that simple interventions applied directly to the identified circuits, without any additional training, can substantially improve robustness against Typographic Attacks in object classification. These interventions, such as selective adjustment of attention weights, also outperform both supervised and training-free defense methods. Our experiments demonstrate that applying the proposed intervention to the vision encoders of several state-of-the-art LVLMs yields substantial gains in Visual Question Answering accuracy under Typographic Attack interference on RIO-Bench. These results confirm both the efficacy and the generalizability of our mechanistic approach. },
+  arxiv = {2601.15441},
+  abstract = {Internal activations of diffusion models encode rich semantic information, but interpreting such representations remains challenging. While Sparse Autoencoders (SAEs) have shown promise in disentangling latent representations, existing SAE-based methods for diffusion model understanding rely on unsupervised approaches that fail to align sparse features with human-understandable concepts. This limits their ability to provide reliable semantic control over generated images. We introduce CASL (Concept-Aligned Sparse Latents), a supervised framework that aligns sparse latent dimensions of diffusion models with semantic concepts. CASL first trains an SAE on frozen U-Net activations to obtain disentangled latent representations, and then learns a lightweight linear mapping that associates each concept with a small set of relevant latent dimensions. To validate the semantic meaning of these aligned directions, we propose CASL-Steer, a controlled latent intervention that shifts activations along the learned concept axis. Unlike editing methods, CASL-Steer is used solely as a causal probe to reveal how concept-aligned latents influence generated content. We further introduce the Editing Precision Ratio (EPR), a metric that jointly measures concept specificity and the preservation of unrelated attributes. Experiments show that our method achieves superior editing precision and interpretability compared to existing approaches. To the best of our knowledge, this is the first work to achieve supervised alignment between latent representations and semantic concepts in diffusion models.}, 
   dimensions={true},
-  pdf={ECCV2026_Typographic_Attack.pdf},
-  preview="ECCV2026_Typographic_Attack.png",
-  selected={false}
+  pdf={casl.pdf},
+  preview="casl.png",
+  selected={true}
 }
+
 
 @inproceedings{he2026cot,
   author = {He, Zhenghao and Guangzhi Xiong and Bohan Liu and Sanchit Sinha and Aidong Zhang},
@@ -33,18 +33,18 @@
 }
 
 
-
-@inproceedings{he2026casl,
-  author = {He, Zhenghao and Guangzhi Xiong and Boyang Wang and Sanchit Sinha and Aidong Zhang},
-  title = {CASL: Concept-Aligned Sparse Latents for Interpreting Diffusion Models},
-  booktitle = {arXiv preprint arXiv:2601.15441},
+@inproceedings{he2026cot,
+  author = {Bohan Liu, Wenqian Ye, Guangzhi Xiong, Zhenghao He, Sanchit Sinha, Aidong Zhang},
+  title = {Towards Robustness against Typographic Attack with Training-free Concept Localization},
+  booktitle = {The 2026 Conference on Empirical Methods in Natural Language Processing (ECCV)},
   year = {2026},
-  arxiv = {2601.15441},
-  abstract = {Internal activations of diffusion models encode rich semantic information, but interpreting such representations remains challenging. While Sparse Autoencoders (SAEs) have shown promise in disentangling latent representations, existing SAE-based methods for diffusion model understanding rely on unsupervised approaches that fail to align sparse features with human-understandable concepts. This limits their ability to provide reliable semantic control over generated images. We introduce CASL (Concept-Aligned Sparse Latents), a supervised framework that aligns sparse latent dimensions of diffusion models with semantic concepts. CASL first trains an SAE on frozen U-Net activations to obtain disentangled latent representations, and then learns a lightweight linear mapping that associates each concept with a small set of relevant latent dimensions. To validate the semantic meaning of these aligned directions, we propose CASL-Steer, a controlled latent intervention that shifts activations along the learned concept axis. Unlike editing methods, CASL-Steer is used solely as a causal probe to reveal how concept-aligned latents influence generated content. We further introduce the Editing Precision Ratio (EPR), a metric that jointly measures concept specificity and the preservation of unrelated attributes. Experiments show that our method achieves superior editing precision and interpretability compared to existing approaches. To the best of our knowledge, this is the first work to achieve supervised alignment between latent representations and semantic concepts in diffusion models.}, 
+  arxiv = {2607.02494},
+  code = {https://github.com/Liu-524/SamplingTAR},
+  abstract = {Models trained via Contrastive Language-Image Pretraining (CLIP) serve as the foundational vision encoders for most modern Large Vision Language Models (LVLMs). Despite their widespread adoption, CLIP models exhibit a critical yet underexplored failure mode: irrelevant text appearing within images confounds visual representations, biasing them toward lexical meaning rather than true visual semantics. This robustness issue, commonly described as a Typographic Attack (TA), exposes a vulnerability that poses a significant risk to safety-critical applications such as autonomous driving. To achieve interpretable and effective robustness against TA, we propose a novel, training-free mechanistic interpretability method. Our method provides sampling-based interpretations of hidden state representations and quantitatively attributes semantic versus lexical focus to individual attention heads. Through probabilistic analysis and circuit mining, we isolate specific Vision Transformer (ViT) components that disproportionately encode lexical information, thereby identifying the mechanistic source of TA. We further show that simple interventions applied directly to the identified circuits, without any additional training, can substantially improve robustness against Typographic Attacks in object classification. These interventions, such as selective adjustment of attention weights, also outperform both supervised and training-free defense methods. Our experiments demonstrate that applying the proposed intervention to the vision encoders of several state-of-the-art LVLMs yields substantial gains in Visual Question Answering accuracy under Typographic Attack interference on RIO-Bench. These results confirm both the efficacy and the generalizability of our mechanistic approach. },
   dimensions={true},
-  pdf={casl.pdf},
-  preview="casl.png",
-  selected={true}
+  pdf={ECCV2026_Typographic_Attack.pdf},
+  preview="ECCV2026_Typographic_Attack.png",
+  selected={false}
 }
 
 
