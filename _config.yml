@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Zhenghao
-middle_name: 
+middle_name:
 last_name: He
 # chinese_last_name: 何
 # chinese_first_name: 征昊
@@ -28,8 +28,8 @@ impressum_path: # set to path to include impressum link in the footer, use the s
 # Theme
 # -----------------------------------------------------------------------------
 # code highlighter theme
-highlight_theme_light: github   # https://github.com/jwarby/jekyll-pygments-themes
-highlight_theme_dark: native    # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_light: github # https://github.com/jwarby/jekyll-pygments-themes
+highlight_theme_dark: native # https://github.com/jwarby/jekyll-pygments-themes
 
 # repo color theme
 repo_theme_light: default # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
@@ -110,9 +110,8 @@ x_username: hzh_zhenghao # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
-# contact_note: > 
+# contact_note: >
 # You can even add a little note about which of these is the best way to reach you.
-  
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

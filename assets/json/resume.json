@@ -129,12 +129,7 @@
       "name": "Programming",
       "level": "Good",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Python",
-        "C++",
-        "Verilog",
-        "Java"
-      ]
+      "keywords": ["Python", "C++", "Verilog", "Java"]
     }
   ],
   "languages": [
@@ -153,20 +148,12 @@
     {
       "name": "Sports",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Workout",
-        "Swimming",
-        "Mountaineering",
-        "skiing"
-      ]
+      "keywords": ["Workout", "Swimming", "Mountaineering", "skiing"]
     },
     {
       "name": "Photograph",
       "icon": "fa-solid fa-tag",
-      "keywords": [
-        "landscape photography",
-        "UnderLearning"
-      ]
+      "keywords": ["landscape photography", "UnderLearning"]
     }
   ]
 }

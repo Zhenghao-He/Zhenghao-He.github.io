@@ -2,11 +2,12 @@
 layout: page
 title: BrainBeats
 description: Design and implement a portable single-channel EEG fatigue detection device.
-img: assets/img/brainbeats/logo.png 
+img: assets/img/brainbeats/logo.png
 importance: 1
 category: work
 related_publications: true
 ---
+
 <style>
 /* CSS 样式定义 */
 .container {
@@ -25,15 +26,12 @@ Collaborators:
 <a href="https://github.com/GianmarcoFortunelli">Gianmarco</a>
 </mark>
 
->This project was awarded as <a href="https://shcxcy.usst.edu.cn/Index">Shanghai Students' Innovation and Entrepreneurship Training Program</a>. And won the second prize in <a href="https://www.heywhale.com/home/competition/649fbd1be92928a38f0f2f50">2023 AI for Brain Science</a>. You can find more details in our <a href="https://github.com/Zhenghao-He/BrainBeats">Github</a> repository.
-
+> This project was awarded as <a href="https://shcxcy.usst.edu.cn/Index">Shanghai Students' Innovation and Entrepreneurship Training Program</a>. And won the second prize in <a href="https://www.heywhale.com/home/competition/649fbd1be92928a38f0f2f50">2023 AI for Brain Science</a>. You can find more details in our <a href="https://github.com/Zhenghao-He/BrainBeats">Github</a> repository.
 
 Brain fatigue is a common phenomenon that affects people's daily life. Being under fatigue not only easily leads to accidents, but may also have negative impacts on personal health. Therefore, accurate monitoring and timely intervention of individual fatigue status is of great significance for improving work efficiency, ensuring traffic safety, and maintaining physical health.
 
-This work is a portable brain computer interface device used for fatigue detection. The device utilizes brain computer interface technology to study the brain waves of the human body during fatigue and wakefulness. 
+This work is a portable brain computer interface device used for fatigue detection. The device utilizes brain computer interface technology to study the brain waves of the human body during fatigue and wakefulness.
 
-
-    
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/brainbeats/logo.png" title="logo" class="img-fluid rounded z-depth-1" %}
@@ -87,8 +85,6 @@ We have also designed a front-end interface for this device, which facilitates u
     The frontend of the device(currently, only mobile devices have been developed).
 </div>
 This project dataset uses data collected by [Tongji Affective Computing Lab](https://github.com/TJ-ACLAB). All members of this project also participated in data collection and preprocessing experiments. Thank you [Yayue Hou](https://github.com/YayueHou) for organizing the dataset. The specific experimental methods and datasets can be downloaded from TJ-ACLAB's Github [repository](https://github.com/TJ-ACLAB/FAT-WAKE).
-
-
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
